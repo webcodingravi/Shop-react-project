@@ -21,7 +21,7 @@ const Contact = () => {
 
                  <div className="flex flex-col">
                     <label className="font-semibold text-lg mb-1">Message</label>
-                    <textarea rows={4} className="p-3 border border-gray-300 rounded focus:outline-none" placeholder="Enter your message here"> </textarea>
+                    <textarea rows={4} className="p-3 border border-gray-300 rounded focus:outline-none" placeholder="Enter your message" />
                 </div>
 
 

@@ -14,6 +14,9 @@ import Category from "./Components/Category"
 import Login from "./Components/Login"
 import Signup from "./Components/Signup"
 import Contact from "./Components/Contact"
+import PreGuard from "./Components/Guard/PreGuard";
+import Cart from "./Components/Cart"
+import Profile from "./Components/Profile"
 
 
 
@@ -25,8 +28,13 @@ import Contact from "./Components/Contact"
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products/>} />
             <Route path="/category" element={<Category/>} />
+            <Route path="/profile" element={<Profile/>} />
+            <Route element={<PreGuard/>}>
+             <Route path="/cart" element={<Cart/>} />
             <Route path="/login" element={<Login/>} />
             <Route path="/signup" element={<Signup/>} />
+            </Route>
+            
             <Route path="/contact-us" element={<Contact/>} />
             <Route path="/admin">
              <Route path="dashboard" element={<Dashboard/>}/>

@@ -53,20 +53,20 @@ const Home = () => {
         <>
          <Layout>
           <header>
-              <Swiper
+              <Swiper className="h-[800px]"
             slidesPerView={1}
            navigation
              pagination={{ clickable: true }}
               modules={[Navigation, Pagination]}
             >
             <SwiperSlide>
-                <img src="/images/1.jpg" className="w-full"/>
+                <img src="/images/1.jpg" className="w-full object-cover"/>
                 </SwiperSlide>
             <SwiperSlide>
-                <img src="/images/2.gif" className="w-full"/>
+                <img src="/images/2.gif" className="w-full object-cover"/>
                 </SwiperSlide>
             <SwiperSlide>
-               <img src="/images/3.gif" className="w-full"/>
+               <img src="/images/3.gif" className="w-full object-cover"/>
                 </SwiperSlide>
             </Swiper>
           </header>
